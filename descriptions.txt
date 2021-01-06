@@ -1,0 +1,12 @@
+Day 1
+Usually when I grasp a concept I really enjoy if I don't practice it for a specific period, I'll forget it. 
+So I've decided to talk about concurrency in programming for 7 days for it to stick. Why is concurrency amazing? 
+Below are two pieces of code that do the same thing, read webpages, but one take 0.9-1.6 seconds to run while the other takes 5-6 seconds to run. 
+The first one runs 5 times as fast because of concurrency, a significant performance boost. 
+How was this achieved? 
+In the first piece of code, multiple execution flows called threads execute functions to read websites 
+concurrently without having to wait for previous functions to complete the entirety of their task. 
+Since they're not waiting on external events to complete, such as waiting for a response from a website, a new task can start and exevute code in the meantime. 
+So overall more gets done when waiting time is put to good use! Tomorrow I'll talk about where concurrency can go wrong.
+
+#7daysofconcurrency #day1
