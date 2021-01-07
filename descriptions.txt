@@ -10,3 +10,20 @@ Since they're not waiting on external events to complete, such as waiting for a 
 So overall more gets done when waiting time is put to good use! Tomorrow I'll talk about where concurrency can go wrong.
 
 #7daysofconcurrency #day1
+
+Day 2 of 7 Days of Concurrency: Running threads concurrently speeds up performance, but this gain in performance comes with its own set of risks. 
+Consider having a bunch of threads accessing and changing a block of data concurrently. 
+Because the thread scheduling algorithm can swap between threads at any time, 
+there is a chance that the program produces undesirable results such as when a thread reads data before another thread completes writing changes to that data.  
+This is known as race conditions. Therefore threads need to let each other know that they are still going at a task and that other threads should wait. 
+Once solution to this are semaphores, an abstract data type that can be used for signaling whether a resource can be accessed. 
+In the below code multiple-threads are used to increment values to a global variable, 
+semaphores are acquired while a thread is incrementing to the variable and then released so that other threads can start incrementing. 
+Unfortunately semaphores do not solve all of the challenges that come with concurrency and they even create new ones. 
+Tomorrow we will discuss other ways to safely exchange data between threads.
+
+try it out yourself here:
+
+https://lnkd.in/dTVUbCD
+
+#7daysofconcurrency #day2 #programming #python
