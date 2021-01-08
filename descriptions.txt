@@ -27,3 +27,19 @@ try it out yourself here:
 https://lnkd.in/dTVUbCD
 
 #7daysofconcurrency #day2 #programming #python
+
+Day 3 of 7 Days of Concurrency:  Let's say you have a group of threads and you want them to exchange data safely amongst each other. 
+An effective way to do this is by utilizing a queue object with locks, 
+which conveniently enough exists as a Queue class in Python in the queue library. 
+Threads can get and put data into the queue which can then be consumed by other threads. 
+In addition to data you can pass other objects in the queue. 
+An example would be a sentinel passed on to signal the end of a job. 
+In the code below if a thread gets a sentinel from the queue it returns it to the queue and then stops. 
+That way another thread can pick it up, and eventually all threads stop. 
+These properties make queues attractive building blocks for distributed systems. 
+According to the Python Cookbook (O'Reilly) communicating with queues often leads to designs that can be scaled up to other 
+kinds of message-based communication patterns later on without any drastic changes to the underlying architecture. 
+Tomorrow let's talk about a common problem in concurrent programming: deadlocks.
+try it out yourself here:
+https://lnkd.in/dTVUbCD
+#7daysofconcurrency #day3 #programming #python
