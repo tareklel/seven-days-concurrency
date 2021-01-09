@@ -43,3 +43,16 @@ Tomorrow let's talk about a common problem in concurrent programming: deadlocks.
 try it out yourself here:
 https://lnkd.in/dTVUbCD
 #7daysofconcurrency #day3 #programming #python
+
+Day 4 of 7 Days of Concurrency: A common problem that needs to be addressed in concurrency is deadlock. This is a possibility when the threads in your program need to 
+acquire more than one lock at a time to run. Let's say thread A & thread B need both locks 1 & 2 to run. If a thread grabs a lock it will continuously try to acquire 
+the other lock and then execute a task and release both. When the program runs, if thread A acquires lock 1 and thread B acquires lock 2 neither have both locks to 
+execute and release. Both threads will just hang around waiting and the program will freeze. A surprisingly simple solution to solve this is to impose an ordering rule 
+so that multiple locks can only be acquired in ascending order. When thread A acquires lock 1, thread B waits until thread A releases lock 1 to acquire it and only 
+then acquires lock 2 when it is released. Now the two threads can work happily ever after.
+
+try it out yourself here:
+
+https://lnkd.in/dTVUbCD
+
+#7daysofconcurrency #day4 #programming #python
