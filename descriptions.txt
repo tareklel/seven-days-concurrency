@@ -56,3 +56,14 @@ try it out yourself here:
 https://lnkd.in/dTVUbCD
 
 #7daysofconcurrency #day4 #programming #python
+
+Day 5 of 7 Days of Concurrency: Let's have some fun with the Dining Philosophers Problem. The problem was formulated by the Dutch computer scientist Edsger Dijkstra to 
+illustrate synchronization issues in concurrency. Imagine 5 philosophers sitting over dinner. There are 5 chopsticks to be shared between them. A philosopher has two 
+states: thinking when she has less than two chopsticks and eating when she acquires two chopsticks. After a philosopher eats, they will place both chopsticks back on 
+the table. Let's say at the start of dinner each philosopher grabs the chopstick to their left and waits for another chopstick to be released. However all 5 chopsticks 
+have been acquired and all the philosopher are busy thinking and no one is eating. Eventually the philosophers starve to death and we are left with a rather morbid 
+dinner party. There are several solutions proposed to overcome the problem the simplest of which involves numbering the chopsticks and only allowing the philosophers 
+to acquire in ascending order the chopsticks to their left and right (image). There are other solutions including adding an arbiter that would give the philosophers 
+permission to eat one at a time. try it out yourself here: https://lnkd.in/dTVUbCD
+#7daysofconcurrency #day4 #programming #python
+
