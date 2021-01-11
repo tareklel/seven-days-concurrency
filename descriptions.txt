@@ -67,3 +67,21 @@ to acquire in ascending order the chopsticks to their left and right (image). Th
 permission to eat one at a time. try it out yourself here: https://lnkd.in/dTVUbCD
 #7daysofconcurrency #day4 #programming #python
 
+Day 6 of 7 Days of Concurrency: Concurrency and parallelism are related 
+concepts that can speed a program's performance but they're actually 
+quite different. Imagine you're in the kitchen and preparing soup. You 
+could start boiling the water and as the pot heats up, you chop 
+vegetables in the meantime. As the soup cooks you continue to cut and 
+toss vegetables in. This could be thought of as concurrency, you are 
+moving nimbly between multiple tasks (cooking and cutting). This is very 
+different from cutting all the vegetables and then cooking the soup, 
+this would be sequential and takes more time. Now suppose your friend 
+Tarek steps in while you're cooking and starts chopping vegetables with 
+you. Both of you chopping at the same time halves the time it takes to 
+execute. This is parallelism when tasks are executed simultaneously. To 
+achieve this multiple CPUs are required where one core is assigned to 
+each task or sub-task. Parallelism has been long used in 
+high-performance computing and is an interesting topic that warrants its 
+own deep-dive.
+#7daysofconcurrency #day6 #programming #python
+photo credit: https://lnkd.in/ddU3Wx9
