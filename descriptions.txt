@@ -6,7 +6,7 @@ The first one runs 5 times as fast because of concurrency, a significant perform
 How was this achieved? 
 In the first piece of code, multiple execution flows called threads execute functions to read websites 
 concurrently without having to wait for previous functions to complete the entirety of their task. 
-Since they're not waiting on external events to complete, such as waiting for a response from a website, a new task can start and exevute code in the meantime. 
+Since they're not waiting on external events to complete, such as waiting for a response from a website, a new task can start and execute code in the meantime. 
 So overall more gets done when waiting time is put to good use! Tomorrow I'll talk about where concurrency can go wrong.
 
 #7daysofconcurrency #day1
@@ -85,3 +85,13 @@ high-performance computing and is an interesting topic that warrants its
 own deep-dive.
 #7daysofconcurrency #day6 #programming #python
 photo credit: https://lnkd.in/ddU3Wx9
+
+Day 7 of 7 Days of Concurrency: Let's end our week with a quick rundown of what we covered (1) Concurrency is the ability of program threads to execute in partial order, so more gets done quickly since instead of waiting on completing a whole task other tasks can be started asynchronously. (2) There are risks to running programs concurrently as undesirable results can be produced (race conditions). (3) One solution is using queues which can be used to safely exchange information between threads. (4) Locks can be used to lock data while a thread is working on it. However this may result in deadlock, where a set of processes are blocked because each process is holding a resource and waiting for another resource acquired by some other process. (5) A simple solution to this problem is by numbering resources and allowing them to used in ascending order by threads. (6) Concurrency and parallelism are related 
+
+concepts that can speed a program's performance but they're actually quite different. While in concurrency you are moving nimbly between tasks, in parallelism multiple task are completed simultaneously by different CPUs. 
+
+I hope you enjoyed these 7 days and I'll try to cover a new topic another time!
+
+#7daysofconcurrency #day7 #programming #python
+
+photo credit: Emma Block
